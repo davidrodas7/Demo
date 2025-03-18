@@ -1,16 +1,12 @@
 package com.example.employee.hystrix;
 
 
-import com.example.employee.dto.EmployeeDTO;
 import com.example.employee.dto.response.WrapperExampleDTO;
 import com.example.employee.feign.EmployeeExampleFeignClient;
-import com.example.employee.service.EmployeeService;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 
 @Component
 public class EmployeeExampleCommand {

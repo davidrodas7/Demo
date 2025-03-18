@@ -1,7 +1,6 @@
 package com.example.employee.dto;
 
 
-
 public class EmployeeDTO {
 
     private Long id;
