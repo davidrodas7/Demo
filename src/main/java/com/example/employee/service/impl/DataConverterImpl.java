@@ -14,11 +14,11 @@ public class DataConverterImpl implements DataConverter {
         LinkedHashMap<?, ?> map = (LinkedHashMap<?, ?>) data;
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setId(convertToLong(map.get("id")));
-        employeeDTO.setEmployee_name((String) map.get("employee_name"));
-        employeeDTO.setEmployee_salary(convertToLong(map.get("employee_salary")));
-        employeeDTO.setEmployee_annual_salary(convertToLong(map.get("employee_salary")) * 12L);
-        employeeDTO.setEmployee_age(convertToLong(map.get("employee_age")));
-        employeeDTO.setProfile_image((String) map.get("profile_image"));
+        employeeDTO.setEmployeeName((String) map.get("employee_name"));
+        employeeDTO.setEmployeeSalary(convertToLong(map.get("employee_salary")));
+        employeeDTO.setEmployeeAnnualSalary(convertToLong(map.get("employee_salary")) * 12L);
+        employeeDTO.setEmployeeAge(convertToLong(map.get("employee_age")));
+        employeeDTO.setProfileImage((String) map.get("profile_image"));
         return employeeDTO;
     }
 
